@@ -1,11 +1,11 @@
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
-import HomePage from "./components/HomePage";
-import Root from "./components/Root";
-import EventsPage from "./components/EventsPage";
-import EventDetailPage from "./components/EventDetailPage";
-import NewEventPage from "./components/NewEventPage";
-import EditEventPage from "./components/EditEventPage";
-import Error from "./components/Error";
+import HomePage from "./pages/HomePage";
+import Root from "./pages/Root";
+import EventsPage from "./pages/EventsPage";
+import EventDetailPage from "./pages/EventDetailPage";
+import NewEventPage from "./pages/NewEventPage";
+import EditEventPage from "./pages/EditEventPage";
+import Error from "./pages/Error";
 
 // 6. Output a list of dummy events to the EventsPage
 //    Every list item should include a link to the respective EventDetailPage
