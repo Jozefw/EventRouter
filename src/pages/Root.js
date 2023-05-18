@@ -8,7 +8,7 @@ function Root(){
         <>
         <MainNavigation></MainNavigation>
         <main>
-        <Outlet>n</Outlet>
+        <Outlet></Outlet>
         </main>
         </>
     )

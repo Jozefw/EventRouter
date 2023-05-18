@@ -14,10 +14,11 @@ function MainNavigation() {
             <NavLink to="/events" className={ ({isActive})=> isActive ? classes.active:undefined} >Events</NavLink>
           </li>
           <li>
-            <NavLink to="/events/<some-id>" className={ ({isActive})=> isActive ? classes.active:undefined} >Event Details</NavLink>
+            <NavLink to="/events/:eventId" className={ ({isActive})=> isActive ? classes.active:undefined} >Event Details</NavLink>
           </li>
           <li>
-            <NavLink to="/events/new" className={ ({isActive})=> isActive ? classes.active:undefined} >New Events</NavLink>
+            <NavLink to="/events/new" className={ ({isActive})=> isActive ? classes.active:undefined} 
+            end>New Events</NavLink>
           </li>
           <li>
             <NavLink to="/events/<some-id>/edit" className={ ({isActive})=> isActive ? classes.active:undefined} >Edit Events</NavLink>
