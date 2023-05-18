@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 function EventsPage(){
     return(
         <h1>Events Page</h1>
