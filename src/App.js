@@ -1,9 +1,11 @@
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import HomePage from "./components/HomePage";
+import Root from "./components/Root";
 import EventsPage from "./components/EventsPage";
 import EventDetailPage from "./components/EventDetailPage";
 import NewEventPage from "./components/NewEventPage";
 import EditEventPage from "./components/EditEventPage";
+import Error from "./components/Error";
 
 // 6. Output a list of dummy events to the EventsPage
 //    Every list item should include a link to the respective EventDetailPage
@@ -12,7 +14,7 @@ import EditEventPage from "./components/EditEventPage";
 
 const routes = createBrowserRouter([
   {path:'/', element:<Root></Root>,
-  errorElement: <ErrorPage></ErrorPage>,
+  errorElement: <Error></Error>,
   children:[
     {path:'/events',element:<EventsPage></EventsPage>},
     {path:'/events/:eventId',element:<EventDetailPage></EventDetailPage>},
